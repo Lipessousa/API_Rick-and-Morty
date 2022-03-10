@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rick and Morty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-image: linear-gradient(to left, black, black, rgba(0, 255, 221, 0.472));">
+    <div class="card" style="width: 35rem; align-items: center; margin: auto; margin-top: 50px; border: 2px solid white;; background-color: black">
+        <h3 style="color: rgba(0, 255, 213, 0.959); margin-top: 3px; text-shadow: 0 0 0.2em rgb(0, 255, 213, 0.959), 0 0 0.2em rgb(0, 255, 213, 0.959) ;">API Rick and Morty</h3>
+        <input type="text" id="personagem" placeholder="insira um personagem" style="width: 235px; margin-top: 5px;">
+        <input type="text" id="idPer" placeholder="as variantes vão de 0 a 19" style="width: 235px;">
+        <button type="button" onclick="findPers()" class="btn btn-light">Procurar</button>
+        <br>
+        <img id="img-personagem" alt="">
+        <br>
+        <div class="card-body" style="text-align: center; color: white; border: 1px solid white; margin-bottom: 2px;">
+            <h5 id="name" style="border-bottom: 1px solid white;"></h5>
+            <h5 id="status" style="border-bottom: 1px solid white;"></h5>
+            <h5 id="origin" style="border-bottom: 1px solid white;"></h5>
+            <h5 id="species" style="border-bottom: 1px solid white;"></h5>
+            <h5 id="location" style="border-bottom: 1px solid white;"></h5>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
